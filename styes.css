@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
+  background: #0d1117;
+
+  font-size: 62.5%;
+}
+
+body > main {
+  padding: 8rem;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.repos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  
+  font-size: 1.6rem;
+}
+
+.repos .repo {
+  border: 1px solid #333;
+  padding: 6rem 6rem;
+  color: #CCC;
+  border-radius: .4rem;
+}
+
+.repos .repo a {
+  text-decoration: none;
+}
+
+.repos .repo a h2 {
+  color: #58A6FF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.repos .repo a:hover {
+  text-decoration: underline #58A6FF;
+}
+
+.repos .repo p {
+  font-size: 1.4rem;
+  color: #AAA;
+}
+
+.repos .repo .language {
+  color: rgb(78, 78, 255);
+}
